@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(5, 5, 5);
+    color: aliceblue;
+}
+
+header{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+section{
+    width: 60vh;
+    background-image: linear-gradient(180deg, black, brown);
+    margin: 5vh auto;
+    text-align: center;
+    border-radius: 12px;
+    padding: 1vh;
+}
+
+span{
+    color: yellowgreen;
+}
+
+.coment{
+    text-shadow: 0px 0px 3px lightblue;
+}
+
+#musica{
+
+    text-align: center;
+
+}
+
+#musica > button{
+    width: 8vh;
+    height: 6vh;
+    font-size: 15pt;
+}
+
+#magi img{
+    width: 350px;
+    display: block;
+    margin:2vh auto;
+}
+
+footer{
+    text-align: center;
+}
+
+#voltar{
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternurita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="https://www.instagram.com/reel/C4SxGitPmnQ/?igsh=cWF5MDQ1dW04OTFm" target="_blank">Boas vindas</a>
+        </h1>
+    </header>
+    <main>
+        <p>
+            Esse sitezinho tem como finalidade comemorar os <abbr title="22">🤨</abbr> ​Anos da
+            nossa amiguinha <a href="https://www.instagram.com/shigammi?igsh=c2psN3NzdGVpczBj" target="_blank">Bruna</a>.
+            Então vamos ver alguns conteudos de midia.
+        </p>
+        <section id="manga">
+            <h2>
+                magi the labyrinth of magic
+            </h2>
+            <div class="content">
+                <a href="links/magi_cap1.html" target="_parent"><img src="imagens/Magi/Magi.jpeg" alt="magi poster"></a>
+                
+                <p>
+                    Magi: The Labyrinth of Magic" é um mangá escrito e ilustrado por Shinobu Ohtaka. 
+                    A história segue as aventuras de Aladdin, Alibaba e Morgiana em um mundo repleto de magia, djinns e poderosos impérios.
+                </p>
+                <p class="coment">
+                    <span>*</span> Eu gostei bastante da ideia, vou ver melhor quando tiver tempo.
+                </p>
+            </div>
+        </section>
+        <section id="bride">
+            <h2>
+                bride of deimos
+            </h2>
+            <div class="content">
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/fycnjZBDRQg?si=Wyjdw8eKzsbA2W_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>
+                    "Bride of Deimos" é uma obra de horror gótico criado por Etsuko Ikeda e escrita por Etsuko Ikeda e Yuuho Ashibe. A história segue a vida de Minako Akiyoshi,
+                    uma jovem bela e sensível, e seu envolvimento com seres sobrenaturais e misteriosos.
+                </p>
+                <p class="coment">
+                    <span>*</span> Achei massa e esquizofrênico
+                </p>
+            </div>
+        </section>
+        <section id="corvo">
+            <h2>
+                O Corvo
+            </h2>
+            <div class="content">
+                <a href="https://youtu.be/RSiUpMDZ44k?si=Jawog27Jytx2HFve" target="_blank"><img src="imagens/corvo.jpg" alt="O corvo"></a>
+                <p>
+                    "O Corvo" é um filme de ação e fantasia dirigido por Alex Proyas, lançado em 1994. O filme é baseado na história em quadrinhos homônima de James O'Barr. A trama segue Eric Draven, interpretado por Brandon Lee, um músico
+                    que retorna dos mortos como um vigilante sobrenatural para se vingar daqueles que o assassinaram e de sua noiva, Shelly Webster, na noite anterior ao seu casamento.
+                </p>
+                <p class="coment">
+                    <span>*</span> Eita como ela é Gótica
+                </p>
+            </div>
+        </section>
+        <section id="morro">
+            <h2>
+                O morro dos ventos uivantes (2009)
+            </h2>
+            <div class="content">
+                <a href="https://youtu.be/kYhsLi3qLeE?si=wR5Fkk6J1plEa4a4" target="_blank"><img src="imagens/morro.jpeg" alt="morro dos ventos uivantes"></a>
+                <p>
+                    "O Morro dos Ventos Uivantes" é um romance clássico escrito por Emily Brontë e publicado pela primeira vez em 1847. A história se passa na Inglaterra rural do século XIX e
+                     é narrada principalmente por Ellen "Nelly" Dean, uma empregada na mansão chamada Morro dos Ventos Uivantes.
+                </p>
+            </div>
+        </section>
+        <section id="dracula">
+            <h2>
+                Drácula
+            </h2>
+            <div class="content">
+                <a href="https://www.ebooksbrasil.org/adobeebook/draculap.pdf"><img src="imagens/dracula.jpg" alt="dracula"></a>
+            
+                <p>
+                    "Drácula" é um romance gótico clássico escrito por Bram Stoker e publicado em 1897. A história é contada principalmente através de diários, cartas e registros de áudio, e segue
+                     a narrativa de várias personagens enquanto enfrentam o terror provocado pelo vampiro lendário, Conde Drácula.
+                </p>
+                <p class="coment">
+                    <span>*</span> 🦇Boo o vampiro 🧛🦇
+                </p>
+            </div>
+            
+        </section>
+        <div id="musica">
+            <audio loop="true" preload="auto" id="audio-tocado">
+                <source src="music/Malice Mizer.mp3" type="audio/mp3">
+            </audio>
+            <button id="player">▶️</button>
+        </div>
+    </main>
+    <script>
+        
+    const audioPlayer = document.getElementById('audio-tocado');
+    const playButton = document.getElementById('player');
+
+    playButton.addEventListener('click', function() {
+        if (audioPlayer.paused) {
+            audioPlayer.play()
+            playButton.textContent = '⏸️'
+        } else {
+            audioPlayer.pause();
+            playButton.textContent = '▶️'
+        }
+    })
+    </script>
+</body>
+</html>
